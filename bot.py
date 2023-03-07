@@ -1,6 +1,7 @@
 import discord
 import responses
 import key
+import time
 # 534723950656
 # 2733747207233
 
@@ -9,7 +10,7 @@ async def send_message(message, user_message, is_private):
     try:
         response = responses.handle_response(user_message)
         await message.channel.send(response)
-        # message.author.send(response) if is_private else await
+        # implement method that waits for response consisting of a time in minutes from user if message is "set customs time"
     except Exception as e:
         print(e)
 

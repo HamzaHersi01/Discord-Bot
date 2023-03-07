@@ -9,3 +9,6 @@ def handle_response(message) -> str:
 
     if p_message == 'roll':
         return str(random.randint(0, 6))
+
+    if p_message == 'set customs':
+        return "In how many minutes?"

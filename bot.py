@@ -1,5 +1,6 @@
 import discord
 import responses
+import key
 # 534723950656
 # 2733747207233
 
